@@ -1,0 +1,50 @@
+Port 135/tcp 
+
+What Does it do:
+Used by the DCOM/RPC service.
+
+Acts as a service lookup — like a "directory" for Windows services.
+
+Risk:
+Historically targeted by malware like Blaster Worm.
+
+Can expose sensitive Windows services remotely.
+
+Vulnerable to enumeration and buffer overflow exploits if unpatched.
+
+
+
+Port 139/tcp
+
+What Does it do:
+Part of NetBIOS over TCP/IP, used for
+
+File and printer sharing
+
+Network browsing
+
+
+Risk:
+Can be used for enumeration (e.g., viewing shared folders, usernames).
+
+Subject to SMB relay attacks, NetBIOS poisoning, and information disclosure.
+
+
+
+Port 445/tcp
+What does it Do:
+Used for SMB (Server Message Block) protocol over TCP.
+
+File and printer sharing
+
+Windows domain authentication
+
+
+Risk:
+One of the most exploited ports in Windows history:
+
+EternalBlue exploit (used in WannaCry, NotPetya ransomware)
+
+SMBGhost vulnerability
+
+
